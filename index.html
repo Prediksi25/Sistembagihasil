@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan Penjualan Minyak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LAPORAN PENJUALAN MINYAK</h1>
+    <p id="datetime"></p>
+
+    <label>Nama Pencatat</label>
+    <input type="text" id="pencatat" placeholder="Nama pencatat">
+
+    <label>Jumlah Jerigen Terjual</label>
+    <input type="number" id="jerigen" placeholder="Jumlah jerigen">
+
+    <label>Harga per Jerigen</label>
+    <input type="number" id="harga" placeholder="Harga per jerigen">
+
+    <label>📸 Foto Nota (kamera langsung)</label>
+    <input type="file" accept="image/*" capture="environment" id="fotoNota">
+
+    <label>📸 Foto Jerigen (kamera langsung)</label>
+    <input type="file" accept="image/*" capture="environment" id="fotoJerigen">
+
+    <button onclick="generatePDF()">Generate PDF & Share WA</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
